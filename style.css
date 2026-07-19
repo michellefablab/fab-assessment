@@ -1,0 +1,72 @@
+/* ===========================
+   F.A.B. ACADEMY THEME
+=========================== */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: radial-gradient(circle at top, #284b7a 0%, #13233d 45%, #050913 100%);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#8ee7ff;
+    margin-top:0;
+}
+
+p{
+    font-size:22px;
+}
+
+button{
+
+    background:#4fd6ff;
+    color:#001321;
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:white;
+
+}
+
+.container {
+
+    text-align: center;
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}

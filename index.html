@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.A.B. Academy Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Frontier Adventure Bureau</h1>
+    <h2>Academy Aptitude Assessment</h2>
+
+    <!-- HOME -->
+    <div id="homeScreen">
+
+        <p>Welcome, Recruit.</p>
+
+        <p>Your Academy Assessment begins now.</p>
+
+        <button id="beginButton">
+            Begin Assessment
+        </button>
+
+    </div>
+
+    <!-- NAME -->
+    <div id="nameScreen" style="display:none;">
+
+        <h2>Recruit Information</h2>
+
+        <input
+            type="text"
+            id="playerName"
+            placeholder="Enter your name">
+
+        <br><br>
+
+        <button id="continueName">
+            Continue
+        </button>
+
+    </div>
+
+    <!-- SPECIES -->
+    <div id="speciesScreen" style="display:none;">
+
+        <h2>Select Your Species</h2>
+
+        <p>Your species helps shape your character but will not affect your Academy Assessment.</p>
+
+        <button class="speciesButton" data-species="Human">
+            👤 Human
+        </button>
+
+        <button class="speciesButton" data-species="Android">
+            🤖 Android
+        </button>
+
+        <button class="speciesButton" data-species="Alien">
+            👽 Alien
+        </button>
+
+    </div>
+
+    <!-- ORIGIN -->
+    <div id="originScreen" style="display:none;">
+
+        <h2>Choose Your Origin</h2>
+
+        <p id="originDescription"></p>
+
+        <div id="originButtons"></div>
+
+    </div>
+
+    <!-- ASSESSMENT -->
+<div id="assessmentScreen" style="display:none;">
+
+<h2 id="questionTitle">
+    Academy Simulation 1 of 12
+</h2>
+
+<h3>Mission Brief</h3>
+
+<p id="questionMission"></p>
+
+    <button class="answerButton" id="answerA"></button>
+    <br><br>
+
+    <button class="answerButton" id="answerB"></button>
+    <br><br>
+
+    <button class="answerButton" id="answerC"></button>
+    <br><br>
+
+    <button class="answerButton" id="answerD"></button>
+
+</div>
+
+<!-- RESULTS -->
+<div id="resultsScreen" style="display:none;">
+
+    <h2>Academy Analysis Complete</h2>
+
+    <p><strong>Recruit:</strong> <span id="resultName"></span></p>
+
+    <p><strong>Species:</strong> <span id="resultSpecies"></span></p>
+
+    <p><strong>Origin:</strong> <span id="resultOrigin"></span></p>
+
+    <br>
+
+    <h3>Primary Specialty</h3>
+
+  <h2 id="finalSpecialty" style="font-size:72px; margin:20px 0; color:#8ee7ff;"></h2>
+
+    <p>Report to your Academy Trainer to receive your assignment.</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
